@@ -13,10 +13,10 @@ import json
 import time
 from random import randrange as random
 from random import randrange as random
-import core.indodax.check as indodax_check
-import core.indodax.status as status
-import core.indodax.live as indodax_live
-import core.indodax.redeem as indodax_redeem
+import indodax.check as indodax_check
+import indodax.status as status
+import indodax.live as indodax_live
+import indodax.redeem as indodax_redeem
 from datetime import datetime
 
 '''
