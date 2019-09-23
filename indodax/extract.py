@@ -41,7 +41,7 @@ def kode_voucher(link_voucher):
      try:
         soup = BeautifulSoup(link_confirm.text, "html.parser")
         soup_kode = soup.find('div', {'class':'alert alert-info'})
-        if soup_kode.text != '\nDatabase tidak ada. ':
+        if soup_kode.text != '\nDatabase tidak ada. ' or soup_kode.text != '\nData not found. ':
             extract_kode = (soup_kode.text).split(':')
             kode = extract_kode[1].replace(' ', '')
             return {'isError': False, 'voucher': kode}
