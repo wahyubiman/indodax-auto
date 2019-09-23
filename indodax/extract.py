@@ -46,7 +46,7 @@ def kode_voucher(link_voucher):
             kode = extract_kode[1].replace(' ', '')
             return {'isError': False, 'voucher': kode}
         else:
-            return {'isError': True, 'error': 'kode voucher tidak ditemukan'}
+            return {'isError': True, 'error': 'link konfirmasi sudah di gunakan'}
      except:
       pass
       
